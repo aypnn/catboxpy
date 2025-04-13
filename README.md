@@ -18,12 +18,6 @@ Alternatively, if you wish to access the latest (potentially unstable) version d
 ```bash
 pip install git+https://github.com/anshonweb/catboxpy.git
 ```
-Sure! Below is the exact code for the `README.md` that you can copy and paste into your `README.md` file:
-
-```markdown
-# catboxpy
-
-`catboxpy` is a Python wrapper for the [Catbox.moe](https://catbox.moe/) API, which allows you to easily upload files, manage albums, and interact with the Catbox service. This package supports both synchronous and asynchronous usage.
 
 ## Features
 
@@ -168,12 +162,12 @@ For most operations, such as uploading or managing albums, you need a valid **us
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+---
 
 ## Contact
 
 For issues, bugs, or suggestions, please open an issue on the [GitHub repository](https://github.com/anshonweb/catboxpy/issues).
 
-
+---
 
 ```
