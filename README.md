@@ -86,10 +86,10 @@ The asynchronous interface allows you to perform operations without blocking the
 
 ```python
 import asyncio
-from catboxpy.catbox import CatboxClient
+from catboxpy.catbox import AsyncCatboxClient
 
 async def upload_file():
-    client = CatboxClient(userhash="your_userhash_here")
+    client = AsyncCatboxClient(userhash="your_userhash_here")
     file_url = await client.upload("path/to/your/file.jpg")
     print(f"File uploaded to: {file_url}")
 
@@ -101,10 +101,10 @@ asyncio.run(upload_file())
 
 ```python
 import asyncio
-from catboxpy.catbox import CatboxClient
+from catboxpy.catbox import AsyncCatboxClient
 
 async def upload_url():
-    client = CatboxClient(userhash="your_userhash_here")
+    client = AsyncCatboxClient(userhash="your_userhash_here")
     url = await client.upload('https://example.com/your_image.jpg')
     print(f"URL uploaded to: {url}")
 
@@ -116,10 +116,10 @@ asyncio.run(upload_url())
 
 ```python
 import asyncio
-from catboxpy.catbox import CatboxClient
+from catboxpy.catbox import AsyncCatboxClient
 
 async def create_album():
-    client = CatboxClient(userhash="your_userhash_here")
+    client = AsyncCatboxClient(userhash="your_userhash_here")
     album_url = await client.album.create("My Album", "Album description", ["file1.jpg", "file2.jpg"])
     print(f"Album created at: {album_url}")
 
@@ -131,10 +131,10 @@ asyncio.run(create_album())
 
 ```python
 import asyncio
-from catboxpy.catbox import CatboxClient
+from catboxpy.catbox import AsyncCatboxClient
 
 async def delete_file():
-    client = CatboxClient(userhash="your_userhash_here")
+    client = AsyncCatboxClient(userhash="your_userhash_here")
     await client.delete_file("file_url")
 
 # Running the async function
